@@ -1,0 +1,766 @@
+html {
+  font-size: 14px;
+}
+.svg-wrapper{
+
+}
+.ob-svg{
+  margin:-12vw 20% 0% 0%;
+  width:100%; 
+  overflow: hidden;
+  /* position:relative; */
+}
+
+.main-content-wrapper{
+  display:flex;
+  flex-direction: column;
+  height: calc(100vh - 92px);
+}
+
+#eco-tour:hover, #eco-shopping:hover, #eco-power:hover, #eco-home:hover, #eco-food:hover, #eco-office:hover{
+  opacity:1;
+}
+
+
+.hidden{
+  opacity:0.2;
+  cursor:pointer;
+}
+
+@keyframes spining {
+from{
+     transform: rotate(0deg) ;
+     transform-origin: 50% 50%;
+     transform-box: fill-box;
+   }
+
+ 
+  to{
+       transform: rotate(360deg)skew(0deg, 0deg) ;
+       transform-origin: 50% 50%;
+       transform-box: fill-box;
+   }
+ }
+
+@keyframes goRightTop {
+  from{
+     transform: rotate(0deg) ;
+   }
+   to{
+     transform: rotate(-6deg);
+   }
+   
+ }
+
+
+@keyframes goRightBottom {
+  from{
+     transform: rotate(2deg) ;
+   }
+   to{
+     transform: rotate(-6deg)skew(-3deg,10deg);
+   }
+  
+ }
+
+ @keyframes goLeftbottom {
+  from{
+     transform: rotate(-6deg) ;
+   }
+   to{
+     transform: rotate(0deg);
+   }
+   
+ }
+
+
+ @keyframes bouncing {
+  0%{
+     transform: translateY(13px);
+   }
+   50%{
+     transform: translateY(5px);
+   }
+   100%{
+       transform: translateY(13px);
+   }
+ }
+ @keyframes hand-bouncing {
+  0%{
+     transform: translateY(0px)translateX(0px);
+   }
+   25%{
+      transform: translateY(2px)translateX(1px);
+    }
+   50%{
+      transform: translateY(0px)translateX(1px);
+    }
+   75%{
+     transform: translateY(3px)translateX(1px);
+   }
+   85%{
+      transform: translateY(2px)translateX(1px);
+   }
+   100%{
+       transform: translateY(0px);
+   }
+ }
+
+ @keyframes drink-bouncing {
+  0%{
+     transform: translateY(0px)translateX(-0.5px);
+   }
+   80%{
+     transform: translateY(-2.8px)translateX(-2px);
+   }
+   100%{
+       transform: translateY(1.5px)translateX(-0.5px);
+   }
+ }
+
+
+ @keyframes tree-bouncing {
+  0%{
+     transform: translateY(0.3px)skew(0deg);
+   }
+   50%{
+     transform: translateY(-0.3px)skew(0.1deg);
+   }
+   100%{
+       transform: translateY(0.3px)skew(0deg);
+   }
+ }
+ 
+
+ @keyframes shining {
+  0%{
+      opacity:1.2;
+   }
+   25%{
+      opacity:.4;
+   }
+   50%{
+     opacity:2;
+   }
+   75%{
+      opacity:.4;
+   }
+   100%{
+      opacity:.8;
+   }
+ }
+
+ @keyframes showHide {
+  0%{
+      opacity:1;
+   }
+   50%{
+     opacity:0;
+   }
+   100%{
+      opacity:1;
+   }
+ }
+
+ 
+@keyframes redChart {
+  0%{
+    
+   }
+   50%{
+   
+   }
+   100%{
+
+      fill:#FF0000;
+   }
+ }
+
+
+@keyframes rotation {
+ 0%{
+    transform: rotate(0deg) ;
+  }
+  50%{
+    transform: rotate(3deg);
+  }
+  100%{
+      transform: rotate(0deg) ;
+  }
+}
+
+@keyframes waving {
+  0%{
+     transform: scale(0deg) ;
+   }
+   50%{
+     transform: skew(0.1deg,-0.1deg)rotateY(0.2deg);
+   }
+   100%{
+       transform: scale(0deg) ;
+   }
+ }
+
+ @keyframes food-waving {
+  0%{
+     transform: skew(0);
+   }
+   50%{
+     transform: skew(0.1deg, 0.5deg)translateY(1px)translateX(2px);
+     transform-origin: right bottom;
+   }
+   75%{
+      transform: skew(0.2deg, 0.6deg)translateY(2px)translateX(0px);
+      transform-origin: right bottom;
+    }
+   100%{
+       transform: skew(0);
+   }
+ }
+
+ @keyframes food-woman-waving {
+  0%{
+     transform: skew(0);
+   }
+   25%{
+     transform: skew(0.1deg, 0.5deg)translateY(2px)translateX(2px);
+     transform-origin: right bottom;
+   }
+   80%{
+      transform: skew(0.7deg, 0.2deg)translateY(-2px)translateX(3px);
+      transform-origin: right bottom;
+    }
+   100%{
+       transform: skew(0);
+   }
+ }
+
+ @keyframes woman-body-waving {
+   0%{
+      transform: scale(0deg) ;
+    }
+    80%{
+      transform: skew(0.1deg,-0.2deg)rotateY(0.2deg);
+    }
+    100%{
+        transform: scale(0deg) ;
+    }
+ }
+ @keyframes man-body-waving {
+  0%{
+      transform: scale(0deg) ;
+    }
+    50%{
+      transform: skew(0.2deg,-0.2deg)rotateY(0.2deg);
+    }
+    75%{
+      transform: skew(0.2deg,-0.2deg)rotateY(0.6deg);
+    }
+    100%{
+        transform: scale(0deg) ;
+    }
+}
+@keyframes shopping-door-left {
+  0%{
+    transform: translateY(-2px)translateX(-5px);
+    opacity:0;
+  }
+  40%{
+    transform: translateY(0px)translateX(0px);
+    opacity:1;
+  }
+  100%{
+    transform: translateY(0px)translateX(0px);
+    opacity:1;
+  }
+  /* 0%{
+      transform: translateY(-2px)translateX(-5px);
+      opacity:0;
+    }
+    10%{
+      opacity:0;
+    }
+    20%{
+      transform: translateY(0px)translateX(0px);
+      opacity:1;
+    }
+    80%{
+      transform: translateY(0px)translateX(0px);
+      opacity:1;
+    }
+    100%{
+        transform: translateY(-2px)translateX(-5px);
+        opacity:0;
+    } */
+  }
+  @keyframes shopping-door-right {
+    0%{
+      transform: translateY(2px)translateX(5px);
+      opacity:0;
+    }
+    40%{
+      transform: translateY(0px)translateX(0px);
+      opacity:1;
+    }
+    100%{
+      transform: translateY(0px)translateX(0px);
+      opacity:1;
+    }
+     
+      /* 100%{
+          transform: translateY(2px)translateX(5px);
+          opacity:0;
+      } */
+  }
+
+  @keyframes home-hands {
+      0%{
+          transform: rotate(-95deg);
+          transform-origin: center bottom;
+          transform-box: fill-box;
+        }
+        75%{
+          transform: rotate(60deg);
+          transform-origin: 50% 50%;
+          transform-box: center bottom;
+        }
+
+        100%{
+            transform: rotate(-95deg);
+            transform-origin: center bottom;
+            transform-box: fill-box;
+        }
+    }
+
+
+/*綠色旅遊-動畫*/
+.eco-tour:hover .tour-balloon{
+  animation: bouncing 2.5s linear infinite;
+}
+
+.eco-tour:hover .bicycle{
+  animation: goRightTop 2s linear infinite;
+}
+.eco-tour:hover .tour-people{
+  animation: goRightBottom 4s linear infinite;
+ 
+}
+
+/*綠色消費-動畫*/
+
+.eco-shopping:hover .shopping-balloon{
+  animation: bouncing 2.5s linear infinite;
+}
+.eco-shopping:hover .shopping-man{
+  animation: goLeftbottom 5.5s linear infinite;
+}
+.eco-shopping:hover .shopping-door-right{
+  animation: shopping-door-right 5.5s linear infinite;
+}
+.eco-shopping:hover .shopping-door-left{
+  animation: shopping-door-left 5.5s linear infinite;
+}
+
+/*綠色能源-動畫*/
+
+.eco-power:hover .power-fan{
+animation: spining 3s linear infinite;;
+}
+.eco-power:hover .power-fan2{
+animation: spining 2s linear infinite;;
+}
+.eco-power:hover .power-fan3{
+animation: spining 2.5s linear infinite;;
+}
+.eco-power:hover .tree1 .st438{
+     animation: tree-bouncing 2s linear infinite;
+ }
+.eco-power:hover .tree1 .st437{
+  animation: tree-bouncing 3s linear infinite;
+}
+.eco-power:hover .tree2 .st438{
+  animation: tree-bouncing 1s linear infinite;
+}
+.eco-power:hover .tree2 .st437{
+animation: tree-bouncing 1s linear infinite;
+}
+.eco-power:hover .tree3 .st438{
+  animation: tree-bouncing 2s linear infinite;
+}
+.eco-power:hover .tree3 .st437{
+animation: tree-bouncing 3s linear infinite;
+}
+.eco-power:hover .tree4 .st438{
+  animation: tree-bouncing 1s linear infinite;
+}
+.eco-power:hover .tree4 .st437{
+animation: tree-bouncing 1s linear infinite;
+}
+.eco-power:hover .energy-balloon{
+  animation: bouncing 2.5s linear infinite;
+}
+.eco-power:hover .fan1{
+  opacity: 0.2;
+}
+.eco-power:hover .solarBoard1{
+  animation: shining 2.5s linear infinite;
+}
+.eco-power:hover .solarBoard2{
+  animation: shining 1.5s infinite;
+}
+.eco-power:hover .solarBoard3{
+  animation: shining 3s linear infinite;
+}
+.eco-power:hover .solarBoard4{
+  animation: shining 6s linear infinite;
+}
+.eco-power:hover .solarBoard5{
+  animation: shining 3.5s linear infinite;
+}
+
+/*綠色辦公-動畫*/
+
+.eco-office:hover .office-balloon{
+  animation: bouncing 2.5s linear infinite;
+}
+.eco-office:hover .office-man{
+
+}
+.eco-office:hover .office-man-rightHand{
+  animation: showHide .8s ease-in-out infinite;
+}
+.eco-office:hover .office-manleftHand{
+  animation: showHide .5s ease-in-out infinite;
+}
+.eco-office:hover .office-msg1{
+animation: showHide 1.5s ease-in-out infinite;
+ }
+.eco-office:hover .office-man-hand{
+  animation: waving .8s ease-in-out infinite;
+}
+.eco-office:hover .office-msg2{
+animation: showHide 1s ease-in-out infinite;
+}
+.eco-office:hover .officeChart{
+  animation: redChart 2.5s linear infinite;
+
+}
+
+/*綠色飲食-動畫*/
+.eco-food:hover .food-balloon{
+  animation: bouncing 2.5s linear infinite;
+}
+.eco-food:hover .food-man{
+  animation: man-body-waving 3s linear infinite;
+}
+.eco-food:hover .man-leftHand{
+  animation: hand-bouncing 3s linear infinite;
+}
+
+.eco-food:hover .woman-body{
+  animation: woman-body-waving 2s ease-in-out infinite;
+}
+.eco-food:hover .food-drink{
+  animation: drink-bouncing 2s ease-in-out infinite;
+}
+.eco-food:hover .food-woman{
+  animation: food-woman-waving 2s ease-in-out infinite;
+}
+.eco-food:hover .food-man-hand{
+  animation: food-waving 3s ease-in-out infinite;
+}
+
+/*綠色居家-動畫*/
+.eco-home:hover .home-balloon{
+  animation: bouncing 2.5s linear infinite;
+}
+.eco-home:hover .home-right-hand{
+  animation: home-hands 3.5s linear infinite;
+}
+.eco-home:hover .home-left-hand{
+  animation: home-hands 3.5s linear infinite;
+}
+
+
+
+/* @keyframes swing { 
+  20% { transform: rotate(0turn) translate(10px, 5px);}
+  60% { transform: rotate(-0.01turn) translate(2px, 5px) skew(3deg,-4deg);}
+ 100% { transform: rotate(0turn) translate(6px, 5px); }
+}
+} */
+
+.logo img{
+  width:250px;
+  margin:20px 40px;
+}
+.App{
+  flex-grow:1;
+  position:relative;
+  /* height:calc(100vh - 106px);*/
+  min-height:550px; 
+  overflow: hidden; 
+  margin-top:-50px; 
+}
+a {
+  text-decoration: none!important;
+}
+.side-menu{
+  list-style-type: none;
+  font-family: Microsoft JhengHei;
+  display:block;
+  right:5%;
+  text-align: center;
+ 
+}
+.side-menu li{
+  border:0.5px solid grey;
+  color: grey;
+  border-radius:40px;
+  width:calc(12.5vw + 24px);
+  padding:calc(1px + 1vw);
+  margin:5px;
+  display:flex;
+  justify-content: center;
+  line-height:20px;
+}
+.button{
+font-size:calc(16px + 0.4vw);
+  font-weight:600;
+}
+.button:hover{
+  color:white;
+  transition:.2s;
+}
+.btn1:hover{
+  background:rgb(231, 131, 131);
+ 
+}
+.btn2:hover{
+  background:rgb(235, 201, 108);
+ 
+}
+.btn3:hover{
+  background:rgb(103, 173, 118);
+
+}
+.btn4:hover{
+  background:rgb(73, 123, 170);
+
+}
+.btn5:hover{
+  background:rgb(191, 130, 199);
+ 
+}
+
+/*入口網頁*/
+.btn4 span#a {
+  display: inline;
+}
+
+.btn4:hover span#a {
+  display: none;
+}
+
+.btn4 span#b {
+  display: none;
+}
+
+.btn4:hover span#b {
+  display: inline;
+}
+
+.main-link{
+  display:none;
+  width:100%;
+}
+
+.show{
+  display:block;
+}
+
+
+/* i{
+  font-size:20px;
+} */
+.footer-main{
+  background:rgb(139, 137, 137);
+  /* position: absolute; */
+  /* bottom:0; */
+  color:white;
+  padding:calc(4px + .6vw) calc(2px + .6vw);
+  width:100%;
+  /* line-height:20px; */
+  /* top:90vh; */
+
+}
+.content{
+  display:flex;
+  justify-content: space-evenly;
+  margin:0 auto;
+  width:100%;
+  
+}
+.form-link-main{
+  margin-bottom: calc(3px + .2vw);
+  display:flex;
+}
+
+.footer-text{
+  display:flex;
+  justify-content: space-evenly;
+  width:70%;
+}
+
+.footer-main p{
+ font-size:calc(10px + .4vw);
+  font-family: Microsoft JhengHei;
+  margin-bottom:0 !important;
+  line-height:calc(14px + .6vw);
+  /* text-align: center; */
+ 
+}
+.footer-main-link{
+  font-size:calc(8px + .7vw);
+  border:1px solid white;
+  border-radius:15px;
+  padding:3px 10px;
+  color:white;
+  margin-right:10px;
+
+}
+
+
+@media (min-width: 984px) and (max-width: 1148px) {
+ 
+  html {
+    font-size: 12px;
+  }
+
+   
+}
+@media (min-width: 810px) and (max-width: 984px) {
+ 
+  html {
+    font-size: 10px;
+  }
+   
+}
+@media (min-width: 686px) and (max-width: 810px) {
+ 
+  html {
+    font-size: 8px;
+  }
+   
+}
+
+@media (min-width: 525px) and (max-width: 686px) {
+html {
+  font-size: 6px;
+}
+}
+@media (min-width: 460px) and (max-width: 525px) {
+ 
+  .footer-text p{
+      padding:3px;
+      margin:3px;
+  }
+  html {
+      font-size: 5px;
+    }
+
+    .text{
+      display:block;
+      justify-content: space-evenly;
+      width:70%;
+  }
+ 
+}
+
+@media  (min-width: 375px) and (max-width: 460px){
+  html {
+      font-size: 3px;
+    }
+ 
+}
+@media screen and (max-width: 375px) {
+  html {
+      font-size: 2px;
+    }
+
+}
+
+.main-icon-bar{
+  display:none;
+}
+@media screen and (max-width: 1068px) {
+
+  .main-icon-bar{
+    display:block;
+    margin:0 auto;
+  }
+  .fa-bars{
+    width:30px !important;
+    height:30px !important;
+  }
+  .side-menu {
+      margin:10% auto;
+      display:flex;
+      justify-content: center;
+
+  }
+  .side-menu li{
+    width: calc(70px + 4.8vw);
+    height: calc(70px + 4.8vw);
+    border-radius:50%;
+    padding: 0; 
+    line-height:40px;
+    display:block;
+    white-space: nowrap;
+  }
+
+  .side-menu a{
+      margin:3px;
+      width:100%;
+      display:block;
+      flex-wrap: wrap;
+    
+  }
+
+  .footer-main{
+      padding:15px 0px;   
+  }
+.main-icons-wrapper{
+  position:absolute;
+  margin: 35vh auto 0 auto;
+  width:100%;
+
+}
+
+  
+}
+
+@media screen and (max-width: 746px) {
+
+  .footer-text{
+   
+    width:100%;
+  }
+  .side-menu li{
+    width: calc(80px + 4.8vw);
+    height: calc(80px + 4.8vw);
+    border-radius:50%;
+    line-height:40px;
+    display:block;
+  }
+  .button{
+    font-size:16px;
+   
+  }
+  .button div{
+    text-align: center;
+  }
+  .ob-svg {
+    margin-top:8vh;
+  }
+}
